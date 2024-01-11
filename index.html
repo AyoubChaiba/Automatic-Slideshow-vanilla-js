@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slideshow</title>
+    <link rel="stylesheet" href="./css.css" >
+</head>
+<body>
+    <div class="slides-imge">
+        <div class="settings" onclick="settings(true)">
+            <img src="./menu@4x.png">
+        </div>
+        <div class="settings_drob">
+            <div class="Time">
+                <label >Time</label>
+                <button data-time="-1000">-</button>
+                <samp class="contore"> 6s </samp>
+                <button  data-time="1000">+</button>
+            </div>
+            <div class="check">
+                <input type="checkbox" checked>
+                <label >Automatic</label>
+                <br>
+                <input type="checkbox" checked>
+                <label >Animation</label>
+            </div>
+
+        </div>
+        <h3></h3>
+        <div class="image animated">
+            <img  src="img/1.jpg" style="width:600px ; height:400px">
+            <img  src="img/2.jpg" style="width:600px ; height:400px">
+            <img  src="img/3.jpg" style="width:600px ; height:400px">
+            <img  src="img/4.jpg" style="width:600px ; height:400px">
+            <img  src="img/5.jpg" style="width:600px ; height:400px">
+        </div>
+            <div class="click right" onclick="plus(1)">&#10095</div>
+            <div class="click left" onclick="plus(-1)">&#10094</div>
+            <div class="dot"></div>
+    </div>
+    <script src="./JS.js"></script>
+</body>
+</html>
